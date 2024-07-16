@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #9b9999;  /*opcional #c0836d */
+    display: grid;
+}
+header{
+    background-color: rgba(77, 69, 58, 0.5);
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    margin: 0 auto;
+    align-items: center;
+}
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000; 
+    border-radius: 50%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+.menu p{
+    color: white;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    padding: 0 20px;
+    font-size: 20px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+}
+.navbar ul li a:hover{
+    color: #000000;
+}
+#menu{
+    display: none;
+}
+.icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+main{
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bg{
+    max-width: 500px;
+    background-color: rgba(255, 255, 255,30%);
+    padding: 30px;
+}
+.pru{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.center{
+    display: grid;
+    justify-content: center;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+}
+.center button{
+    background-color: rgba(77, 69, 58, 0.5);
+    padding: 5px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    padding-top: 50px;
+}
+.div h1{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    color: #152840;
+}
+.div h1:hover{
+    color: white;
+}
+.div p{
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+}
+.div1{
+    text-align: center;
+    width: 420px;
+    color: white;
+}
+.div1 img{
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 255,100%),
+                      0px 0px 40px black; 
+    border-radius: 20px;
+}
+.div2{
+    padding: 30px;
+    color: white;
+}
+.div2 h1{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    color: #152840;
+}
+.div2 h1:hover{
+    color: white;
+}
+.div2 h2{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    padding-left: 20px;
+    color: #000000;
+}
+.div2 p{
+    font-family: "Concert One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    padding-left: 40px;
+}
+.div2 div{
+    display: grid;
+    justify-content: center;
+}
+.div2 div img{
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 255,100%),
+                      0px 0px 40px black; 
+    border-radius: 20px;
+}
+footer{
+    background-color: rgba(77, 69, 58, 0.5);
+    padding-bottom: 20px;
+}
+.pie{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+.pie div h2{
+    color: #152840;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    color: #152840;
+}
+.pie div p{
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+}
+.pie div p:hover{
+    color: #152840;
+}
+.pie div a{
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+}
+.pie div a:hover{
+    color: #152840;
+}
+@media(max-width:700px){
+    .menu{
+        padding: 20px;
+        position: relative;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(140, 92, 74,80%);
+        display: none;
+    }
+    .menu .navbar ul{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 20px 0;
+        padding-left: 20px;
+    }
+    .menu .navbar ul li a{
+        font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+    }
+    .menu .navbar ul li a:hover{
+        color: #000000;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .flex{
+        display: grid;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .pie{
+        flex-direction: column;
+    }
+}
